@@ -94,6 +94,7 @@ export const useGlobalObservable = createGlobalObservable(() => {
 <script setup lang="ts">
 import { useGlobalObservable } from './store'
 
+// Can be reused in any component and state will be in sync
 const state = useGlobalObservable()
 </script>
 ```
