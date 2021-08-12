@@ -5,7 +5,7 @@ Lightweight Vue bindings for MobX based on Composition API
 ## Install
 
 ```sh
-yarn add mobx-vue-lite
+yarn add mobx-vue-lite // @vue/composition-api for Vue 2
 ```
 
 ## Example
