@@ -1,11 +1,11 @@
 # mobx-vue-lite
 
-Lightweight Vue bindings for MobX based on Composition API
+Lightweight Vue bindings for MobX based on Composition API.
 
 ## Install
 
 ```sh
-yarn add mobx-vue-lite // @vue/composition-api for Vue 2
+yarn add mobx-vue-lite
 ```
 
 ## Example
@@ -38,7 +38,7 @@ const state = useLocalObservable(() => ({
 
 ### **`<Observer></Observer>`**
 
-Is a renderless Vue component, which applies observer to an anonymous region in your component. `<Observer>` can be used both inside Options and Composition API components.
+Is a renderless Vue component, which applies observer to its children. `<Observer>` can be used both inside Options and Composition API components.
 
 ```html
 <template>
