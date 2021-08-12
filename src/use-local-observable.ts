@@ -1,5 +1,6 @@
+import { tryOnUnmounted } from '@vueuse/shared'
 import { observable, observe, AnnotationsMap } from 'mobx'
-import { getCurrentInstance, shallowRef, Ref, triggerRef, onUnmounted } from 'vue'
+import { shallowRef, Ref, triggerRef } from 'vue'
 
 export function useLocalObservable<TStore extends Record<string, any>>(
     initializer: () => TStore,
@@ -9,10 +10,8 @@ export function useLocalObservable<TStore extends Record<string, any>>(
     const dispose = observe(localObservable.value, () => {
         triggerRef(localObservable)
     })
-    onUnmounted(() => {
-      if (getCurrentInstance()) {
-        dispose()
-      }
+    tryOnUnmounted(() => {
+      dispose()
     })
     return localObservable
 }
