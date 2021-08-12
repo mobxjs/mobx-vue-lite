@@ -34,6 +34,31 @@ const state = useLocalObservable(() => ({
 </script>
 ```
 
+<b><Observer></b>
+
+```html
+<template>
+    <Observer>
+        <div>Name: {{ data.name }}</div>
+        <div>Doubled: {{ state.double }}</div>
+        <button @click="increment">Increment</button>
+    </Observer>
+</template>
+
+<script setup lang="ts">
+import { observer, runInAction } from 'mobx'
+import { Observer } from 'mobx-vue-lite'
+
+const data = observable({ name: 'John' })
+
+const increment = () => {
+    runInAction(() => {
+        data.name = 'Jane'
+    })
+}
+</script>
+```
+
 ## License
 
 MIT License © 2021 [Robert Soriano](https://github.com/wobsoriano)
