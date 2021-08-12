@@ -2,8 +2,6 @@
 
 Lightweight Vue bindings for MobX based on Composition API.
 
-<img src="preview.png" />
-
 ## Install
 
 ```sh
