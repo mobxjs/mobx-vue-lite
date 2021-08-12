@@ -1,6 +1,5 @@
-import { defineComponent } from 'vue-demi'
+import { defineComponent, h } from 'vue-demi'
 import { reaction } from 'mobx'
-import h, { slot as slotDemi } from './utils'
 
 export default defineComponent({
     data: () => ({
@@ -21,10 +20,6 @@ export default defineComponent({
         this.dispose()
     },
     render() {
-        const slot = this.$slots.default ? slotDemi(this.$slots.default) : []
-
-        return h(slot, {
-            key: this.key
-        })
+        return h(this.$slots.default!, { key: this.key })
     }
 })
