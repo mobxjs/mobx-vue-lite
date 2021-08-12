@@ -10,7 +10,7 @@ yarn add mobx-vue-lite
 
 ## Example
 
-### **`useLocalObservable<T>(initializer: () => T, annotations?: AnnotationsMap<T>): T`**
+### **`useLocalObservable<T>(initializer: () => T, annotations?: AnnotationsMap<T>): Ref<T>`**
 
 Creates an observable object with the given properties, methods and computed values.
 
