@@ -63,7 +63,7 @@ const increment = () => {
 </script>
 ```
 
-### createGlobalObservable<T>(stateFactory: () => T): () => T
+### **`createGlobalObservable<T>(stateFactory: () => T): () => T`**
 
 Create a global observer from a local observer.
 
