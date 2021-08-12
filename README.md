@@ -68,7 +68,7 @@ Create a global observer from a local observer.
 
 ```ts
 // store.ts
-import { createGlobalObservable } from 'mobx-vue-lite'
+import { createGlobalObservable, useLocalObservable } from 'mobx-vue-lite'
 
 export const useGlobalObservable = createGlobalObservable(() => {
   return useLocalObservable(() => ({
