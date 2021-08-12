@@ -12,9 +12,7 @@
     }
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "vue-demi": "latest",
