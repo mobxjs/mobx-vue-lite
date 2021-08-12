@@ -63,6 +63,10 @@ const increment = () => {
 </script>
 ```
 
+## Credits
+
+API is inspired from https://github.com/mobxjs/mobx-react-lite.
+
 ## License
 
 MIT License © 2021 [Robert Soriano](https://github.com/wobsoriano)
