@@ -98,6 +98,30 @@ const state = useGlobalObservable()
 </script>
 ```
 
+## Tips
+
+You can watch the state and its changes through Vue's watch:
+
+```ts
+import { watch } from 'vue'
+const state = useLocalObservable(() => ({
+    count: 0,
+    increment() {
+        this.count++
+    }
+}))
+
+// watch the whole state
+watch(state, (value) => {
+    console.log(value)
+})
+
+// watch part of a state
+watch(() => state.value.count, (count) => {
+    console.log(count)
+})
+```
+
 ## Credits
 
 API is inspired from https://github.com/mobxjs/mobx-react-lite.
