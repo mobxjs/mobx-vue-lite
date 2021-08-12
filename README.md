@@ -63,6 +63,41 @@ const increment = () => {
 </script>
 ```
 
+### createGlobalObservable<T>(stateFactory: () => T): () => T
+
+Create a global observer from a local observer.
+
+```ts
+// store.ts
+import { createGlobalObservable } from 'mobx-vue-lite'
+
+export const useGlobalObservable = createGlobalObservable(() => {
+  return useLocalObservable(() => ({
+      count: 0,
+      get double() {
+        return this.count * 2
+      },
+      increment() {
+        this.count++
+      }
+    }))
+})
+```
+
+```html
+<template>
+    <div>Count: {{ state.count }}</div>
+    <div>Doubled: {{ state.double }}</div>
+    <button @click="state.increment">Increment</button>
+</template>
+
+<script setup lang="ts">
+import { useGlobalObservable } from './store'
+
+const state = useGlobalObservable()
+</script>
+```
+
 ## Credits
 
 API is inspired from https://github.com/mobxjs/mobx-react-lite.
