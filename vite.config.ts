@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import pkg from './package.json'
+import pkg from './package.json';
 
 module.exports = defineConfig({
   build: {
@@ -10,7 +10,7 @@ module.exports = defineConfig({
       fileName: format => `${pkg.name}.${format}.js`  
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', 'mobx'],
       output: {
         globals: {
           vue: 'Vue',
@@ -20,6 +20,6 @@ module.exports = defineConfig({
     }
   },
   optimizeDeps: {
-    exclude: ['vue-demi', 'mobx']
+    exclude: ['vue-demi']
   }
 });
