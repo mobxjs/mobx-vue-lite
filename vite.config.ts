@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
-import pkg from './package.json';
+import { defineConfig } from 'vite'
+import { resolve } from 'path'
+import pkg from './package.json'
+import dts from 'vite-plugin-dts'
 
 module.exports = defineConfig({
   build: {
@@ -19,6 +20,14 @@ module.exports = defineConfig({
       }
     }
   },
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      compilerOptions: {
+        noEmit: false
+      }
+    })
+  ],
   optimizeDeps: {
     exclude: ['vue-demi']
   }

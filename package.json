@@ -33,8 +33,9 @@
   "devDependencies": {
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
-    "rollup-plugin-typescript2": "^0.30.0",
+    "vite-plugin-dts": "latest",
     "vue": "^3.0.0",
     "@types/node": "^16.4.10"
-  }
+  },
+  "files": ["dist"]
 }
