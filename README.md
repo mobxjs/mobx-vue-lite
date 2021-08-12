@@ -10,7 +10,9 @@ yarn add mobx-vue-lite
 
 ## Example
 
-<b>useLocalObserver()</b>
+### **`useLocalObservable<T>(initializer: () => T, annotations?: AnnotationsMap<T>): T`**
+
+Creates an observable object with the given properties, methods and computed values.
 
 ```html
 <template>
@@ -34,7 +36,9 @@ const state = useLocalObservable(() => ({
 </script>
 ```
 
-<b><Observer></b>
+### **`<Observer></Observer>`**
+
+Is a renderless Vue component, which applies observer to an anonymous region in your component. `<Observer>` can be used both inside Options and Composition API components.
 
 ```html
 <template>
