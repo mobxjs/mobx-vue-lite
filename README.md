@@ -44,8 +44,7 @@ Is a renderless Vue component, which applies observer to its children. `<Observe
 <template>
     <Observer>
         <div>Name: {{ data.name }}</div>
-        <div>Doubled: {{ state.double }}</div>
-        <button @click="increment">Increment</button>
+        <button @click="changeName">Change name</button>
     </Observer>
 </template>
 
@@ -55,7 +54,7 @@ import { Observer } from 'mobx-vue-lite'
 
 const data = observable({ name: 'John' })
 
-const increment = () => {
+const changeName = () => {
     runInAction(() => {
         data.name = 'Jane'
     })
