@@ -42,6 +42,19 @@ const state = useLocalObservable(() => ({
 
 Is a renderless Vue component, which applies observer to its children. `<Observer>` can be used both inside Options and Composition API components.
 
+#### Install as a global plugin (Optional)
+
+```ts
+// main.js
+import { createApp } from 'vue'
+import Observer from 'mobx-vue-lite'
+
+const app = createApp(App)
+app.use(Observer)
+```
+
+#### Or: Import and register it locally
+
 ```html
 <template>
     <Observer>

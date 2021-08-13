@@ -1,10 +1,19 @@
+import { App } from 'vue-demi';
+import Observer from './ObserverComponent'
+
+export default {
+    install: (app: App) => {
+        app.component('Observer', Observer)
+    }
+}
+
 export {
   useLocalObservable
 } from './use-local-observable'
 
 export {
-  default as Observer
-} from './ObserverComponent'
+  Observer
+}
 
 export {
   createGlobalState as createGlobalObservable
