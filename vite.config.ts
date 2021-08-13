@@ -11,13 +11,12 @@ module.exports = defineConfig({
       fileName: format => `${pkg.name}.${format}.js`  
     },
     rollupOptions: {
-      external: ['vue', 'mobx', '@vueuse/core', 'vue-demi'],
+      external: ['vue', 'mobx', '@vueuse/core'],
       output: {
         globals: {
           vue: 'Vue',
           mobx: 'mobx',
-          '@vueuse/core': '@vueuse/core',
-          'vue-demi': 'vue-demi'
+          '@vueuse/core': '@vueuse/core'
         }
       }
     }
@@ -29,8 +28,5 @@ module.exports = defineConfig({
         noEmit: false
       }
     })
-  ],
-  optimizeDeps: {
-    exclude: ['vue-demi']
-  }
+  ]
 });
