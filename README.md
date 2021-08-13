@@ -2,6 +2,8 @@
 
 Lightweight Vue bindings for MobX based on Composition API.
 
+Demo: https://codesandbox.io/s/mobx-vue-lite-demo-4mctz
+
 ## Install
 
 ```sh
