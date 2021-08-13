@@ -166,7 +166,7 @@ export default defineComponent({
 </script>
 ```
 
-Class observables should work out-of-the-box. Just wrap the component with the `Observer` component.
+Class observables should work out-of-the-box. Just wrap the component with the `<Observer />` component.
 
 ```html
 <template>
