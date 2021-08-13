@@ -1,4 +1,5 @@
-import { defineComponent, h } from 'vue-demi'
+import { defineComponent } from 'vue-demi'
+import h from './utils'
 import { reaction } from 'mobx'
 
 export default defineComponent({
@@ -14,6 +15,8 @@ export default defineComponent({
     mounted() {
         this.dispose = reaction(() => this.$slots.default!(), () => {
             this.forceUpdate()
+        }, {
+            requiresObservable: true
         })
     },
     unmounted() {
