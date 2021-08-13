@@ -166,6 +166,25 @@ export default defineComponent({
 </script>
 ```
 
+Class observables should work out-of-the-box. Just wrap the component with the `Observer` component.
+
+```html
+<template>
+  <Observer>
+    <h1 v-text="state.count" />
+    <button @click="state.decrement">-</button>
+    <button @click="state.increment">+</button>
+  </Observer>
+</template>
+
+<script setup lang="ts">
+import { Observer } from 'mobx-vue-lite'
+import { CounterStore } from 'counterStore'
+
+const state = new CounterStore();
+</script>
+```
+
 ## Credits
 
 API is inspired from https://github.com/mobxjs/mobx-react-lite.
