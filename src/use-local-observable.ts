@@ -1,4 +1,4 @@
-import { tryOnUnmounted } from '@vueuse/shared'
+import { tryOnUnmounted } from '@vueuse/core'
 import { observable, observe, AnnotationsMap } from 'mobx'
 import { shallowRef, Ref, triggerRef } from 'vue-demi'
 
