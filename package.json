@@ -1,6 +1,6 @@
 {
   "name": "mobx-vue-lite",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "main": "./dist/mobx-vue-lite.umd.js",
   "module": "./dist/mobx-vue-lite.es.js",
@@ -17,8 +17,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^5.3.0",
-    "mobx": "^6.3.2",
-    "vue-demi": "latest"
+    "mobx": "^6.3.2"
   },
   "peerDependencies": {
     "vue": ">=3.0.0-rc.0"
