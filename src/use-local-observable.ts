@@ -1,6 +1,6 @@
 import { tryOnUnmounted } from '@vueuse/core'
 import { observable, observe, AnnotationsMap } from 'mobx'
-import { shallowRef, Ref, triggerRef } from 'vue-demi'
+import { shallowRef, Ref, triggerRef } from 'vue'
 
 export function useLocalObservable<TStore extends Record<string, any>>(
     initializer: () => TStore,
