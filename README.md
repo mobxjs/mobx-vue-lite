@@ -23,18 +23,24 @@ Creates an observable object with the given properties, methods and computed val
     <button @click="state.increment">Increment</button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import { useLocalObservable } from 'mobx-vue-lite'
 
-const state = useLocalObservable(() => ({
-    count: 0,
-    get double() {
-        return this.count * 2
-    },
-    increment() {
-        this.count++
+export default defineComponent({
+    setup() {
+        const state = useLocalObservable(() => ({
+            count: 0,
+            get double() {
+                return this.count * 2
+            },
+            increment() {
+                this.count++
+            }
+        }))
+
+        return { state }
     }
-}))
+})
 </script>
 ```
 
