@@ -64,7 +64,7 @@ app.use(Observer)
 </template>
 
 <script setup lang="ts">
-import { observer, runInAction } from 'mobx'
+import { observable, runInAction } from 'mobx'
 import { Observer } from 'mobx-vue-lite'
 
 const data = observable({ name: 'John' })
