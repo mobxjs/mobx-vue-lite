@@ -1,6 +1,6 @@
 // @ts-ignore
 import { mount  } from '@vue/test-utils'
-import { nextTick } from 'vue'
+import { defineComponent, nextTick } from 'vue'
 import { createGlobalObservable, useLocalObservable } from '../src'
 
 describe('createGlobalObservable', () => {
@@ -17,7 +17,7 @@ describe('createGlobalObservable', () => {
     })
 
     it('should make local observable global', async () => {
-        const Component = {
+        const Component = defineComponent({
             template: `
                 <div data-testid="count">Count: {{ state.count }}</div>
                 <div data-testid="doubled">Doubled: {{ state.double }}</div>
@@ -27,9 +27,9 @@ describe('createGlobalObservable', () => {
                 const state = useGlobalObservable()
                 return { state }
             }
-        }
+        })
 
-        const OtherComponent = {
+        const OtherComponent = defineComponent({
             template: `
                 <div data-testid="count">Count: {{ state.count }}</div>
                 <div data-testid="doubled">Doubled: {{ state.double }}</div>
@@ -38,7 +38,7 @@ describe('createGlobalObservable', () => {
                 const state = useGlobalObservable()
                 return { state }
             }
-        }
+        })
 
         const mainWrapper = mount(Component)
         const otherWrapper = mount(OtherComponent)

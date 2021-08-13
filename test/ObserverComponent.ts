@@ -1,12 +1,12 @@
 // @ts-ignore
 import { mount  } from '@vue/test-utils'
-import { nextTick } from 'vue'
+import { defineComponent, nextTick } from 'vue'
 import { observable, runInAction } from 'mobx'
 import { Observer } from '../src'
 
 describe('Observer', () => {
     it('should rerender component', async () => {
-        const Component = {
+        const Component = defineComponent({
             components: { Observer },
             template: `
                 <Observer>
@@ -34,7 +34,7 @@ describe('Observer', () => {
                     increment
                 }
             }
-        }
+        })
 
         const wrapper = mount(Component)
         expect(wrapper.find('[data-testid="count"]').text()).toBe('Count: 0')

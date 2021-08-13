@@ -1,11 +1,11 @@
 // @ts-ignore
 import { mount  } from '@vue/test-utils'
-import { nextTick } from 'vue'
+import { defineComponent, nextTick } from 'vue'
 import { useLocalObservable } from '../src'
 
 describe('useLocalObservable', () => {
     it('should work properly in a Vue component', async () => {
-        const Component = {
+        const Component = defineComponent({
             template: `
                 <div data-testid="count">Count: {{ state.count }}</div>
                 <div data-testid="doubled">Doubled: {{ state.double }}</div>
@@ -26,7 +26,7 @@ describe('useLocalObservable', () => {
                     state
                 }
             }
-        }
+        })
 
         const wrapper = mount(Component)
         expect(wrapper.find('[data-testid="count"]').text()).toBe('Count: 0')
