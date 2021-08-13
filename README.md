@@ -40,7 +40,7 @@ const state = useLocalObservable(() => ({
 
 ### **`<Observer />`**
 
-Is a renderless Vue component, which applies observer to its children. `<Observer>` can be used both inside Options and Composition API components.
+Is a renderless Vue component, which applies observer to its children.
 
 #### Install as a global plugin (Optional)
 
