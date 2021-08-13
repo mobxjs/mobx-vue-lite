@@ -3,7 +3,7 @@ import { mount  } from '@vue/test-utils'
 import { nextTick } from 'vue'
 import { createGlobalObservable, useLocalObservable } from '../src'
 
-describe('useLocalObservable', () => {
+describe('createGlobalObservable', () => {
     const useGlobalObservable = createGlobalObservable(() => {
         return useLocalObservable(() => ({
             count: 0,
