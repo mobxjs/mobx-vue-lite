@@ -12,11 +12,12 @@
     }
   },
   "scripts": {
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "test": "jest"
   },
   "dependencies": {
-    "mobx": "^6.3.2",
     "@vueuse/core": "^5.3.0",
+    "mobx": "^6.3.2",
     "vue-demi": "latest"
   },
   "peerDependencies": {
@@ -29,7 +30,11 @@
     }
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "@types/node": "^16.4.10",
+    "@vue/test-utils": "^2.0.0-rc.11",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vite-plugin-dts": "latest",
