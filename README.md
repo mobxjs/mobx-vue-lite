@@ -1,6 +1,6 @@
 # mobx-vue-lite
 
-Lightweight Vue bindings for MobX based on Composition API.
+Lightweight Vue 3 bindings for MobX based on Composition API.
 
 Demo: https://codesandbox.io/s/mobx-vue-lite-demo-4mctz
 
@@ -142,28 +142,6 @@ watch(state, (value) => {
 watch(() => state.value.count, (count) => {
     console.log(count)
 })
-```
-
-For Vue 2 users, install `@vue/composition-api`
-
-```html
-<template>
-    <div>Count: {{ state.count }}</div>
-</template>
-
-<script lang="ts">
-import { defineComponent } from '@vue/composition-api'
-import { useLocalObservable } from 'mobx-vue-lite'
-
-export default defineComponent({
-    setup() {
-        const state = useLocalObservable(() => ({
-            count: 0
-        }))
-        return { state }
-    }
-})
-</script>
 ```
 
 Class observables should work out-of-the-box. Just wrap the component with the `<Observer />` component.
