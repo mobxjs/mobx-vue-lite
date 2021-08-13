@@ -16,7 +16,7 @@ describe('createGlobalObservable', () => {
           }))
     })
 
-    it('should work properly in a Vue component', async () => {
+    it('should make local observable global', async () => {
         const Component = {
             template: `
                 <div data-testid="count">Count: {{ state.count }}</div>
