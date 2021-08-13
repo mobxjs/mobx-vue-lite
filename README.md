@@ -24,6 +24,7 @@ Creates an observable object with the given properties, methods and computed val
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { useLocalObservable } from 'mobx-vue-lite'
 
 export default defineComponent({
@@ -141,6 +142,28 @@ watch(state, (value) => {
 watch(() => state.value.count, (count) => {
     console.log(count)
 })
+```
+
+For Vue 2 users, install `@vue/composition-api`
+
+```html
+<template>
+    <div>Count: {{ state.count }}</div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+import { useLocalObservable } from 'mobx-vue-lite'
+
+export default defineComponent({
+    setup() {
+        const state = useLocalObservable(() => ({
+            count: 0
+        }))
+        return { state }
+    }
+})
+</script>
 ```
 
 ## Credits
