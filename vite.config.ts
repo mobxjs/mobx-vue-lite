@@ -11,12 +11,13 @@ module.exports = defineConfig({
       fileName: format => `${pkg.name}.${format}.js`  
     },
     rollupOptions: {
-      external: ['vue', 'mobx', '@vueuse/core'],
+      external: ['vue', 'mobx', '@vueuse/core', 'vue-demi'],
       output: {
         globals: {
           vue: 'Vue',
           mobx: 'mobx',
-          '@vueuse/core': '@vueuse/core'
+          '@vueuse/core': '@vueuse/core',
+          'vue-demi': 'vue-demi'
         }
       }
     }
