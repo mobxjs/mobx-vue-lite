@@ -157,7 +157,7 @@ Class observables should work out-of-the-box. Just wrap the component with the `
 
 <script setup lang="ts">
 import { Observer } from 'mobx-vue-lite'
-import { CounterStore } from 'counterStore'
+import { CounterStore } from './counterStore'
 
 const state = new CounterStore();
 </script>
