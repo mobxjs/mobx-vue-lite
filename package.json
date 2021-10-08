@@ -1,6 +1,6 @@
 {
   "name": "mobx-vue-lite",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "./dist/mobx-vue-lite.umd.js",
   "module": "./dist/mobx-vue-lite.es.js",
