@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@vueuse/core": "^5.3.0",
+    "@vueuse/core": "^6.5.3",
     "mobx": "^6.3.2"
   },
   "peerDependencies": {
