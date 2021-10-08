@@ -20,18 +20,18 @@
     "mobx": "^6.3.2"
   },
   "peerDependencies": {
-    "vue": ">=3.0.0-rc.0"
+    "vue": ">=3.2.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^16.4.10",
-    "@vue/test-utils": "^2.0.0-rc.11",
+    "@vue/test-utils": "^2.0.0-rc.15",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vite-plugin-dts": "latest",
-    "vue": "^3.0.0"
+    "vue": "^3.2.0"
   },
   "files": [
     "dist"
