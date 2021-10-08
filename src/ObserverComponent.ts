@@ -22,6 +22,7 @@ export default defineComponent({
         this.dispose()
     },
     render() {
-        return h(this.$slots.default!, { key: this.key })
+        const slots = this.$slots.default ? this.$slots.default() : ''
+        return h(slots, { key: this.key })
     }
 })
