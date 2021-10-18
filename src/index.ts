@@ -1,20 +1,19 @@
-import { App } from 'vue';
+import type { App } from 'vue';
+import { createGlobalState as createGlobalObservable } from '@vueuse/core'
 import Observer from './ObserverComponent'
+import { useLocalObservable } from './use-local-observable'
 
-export default {
-    install: (app: App) => {
-        app.component('Observer', Observer)
-    }
+const Plugin = {
+  install: (app: App) => {
+    app.component('Observer', Observer)
+  }
 }
 
-export {
-  useLocalObservable
-} from './use-local-observable'
+export default Plugin
 
 export {
-  Observer
+  Observer,
+  useLocalObservable,
+  createGlobalObservable,
+  Plugin
 }
-
-export {
-  createGlobalState as createGlobalObservable
-} from '@vueuse/core'
