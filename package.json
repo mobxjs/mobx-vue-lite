@@ -34,7 +34,8 @@
     "vue": "^3.2.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "module.mjs"
   ],
   "sideEffects": true
 }
