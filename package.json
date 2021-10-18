@@ -36,7 +36,7 @@
   },
   "files": [
     "dist",
-    "module.mjs"
+    "nuxt"
   ],
   "sideEffects": true
 }
