@@ -165,14 +165,13 @@ const state = new CounterStore()
 
 ## Usage with Nuxt 3
 
-To use the `<Observer />` component in a Nuxt 3 app, create a file in your `plugins` folder:
+To use the `<Observer />` component in a Nuxt 3 app, add this to your nuxt config:
 
 ```ts
-// mobx.ts
-import Observer from 'mobx-vue-lite'
+import { defineNuxtConfig } from 'nuxt3'
 
-export default defineNuxtPlugin((nuxtApp) => {
-    nuxtApp.app.use(Observer)
+export default defineNuxtConfig({
+    buildModules: ['mobx-vue-lite/module']
 })
 ```
 
