@@ -9,7 +9,8 @@
     ".": {
       "import": "./dist/mobx-vue-lite.es.js",
       "require": "./dist/mobx-vue-lite.umd.js"
-    }
+    },
+    "./module": "./module.mjs"
   },
   "scripts": {
     "build": "tsc && vite build",
