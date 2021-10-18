@@ -159,8 +159,21 @@ Class observables should work out-of-the-box. Just wrap the component with the `
 import { Observer } from 'mobx-vue-lite'
 import { CounterStore } from './counterStore'
 
-const state = new CounterStore();
+const state = new CounterStore()
 </script>
+```
+
+## Usage with Nuxt 3
+
+To use the `<Observer />` component in a Nuxt 3 app, create a file in your `plugins` folder:
+
+```ts
+// mobx.ts
+import Observer from 'mobx-vue-lite'
+
+export default defineNuxtPlugin((nuxtApp) => {
+    nuxtApp.app.use(Observer)
+})
 ```
 
 ## Credits
