@@ -165,7 +165,7 @@ const state = new CounterStore()
 
 ## Usage with Nuxt 3
 
-To use the `<Observer />` component in a Nuxt 3 app, add this to your nuxt config:
+To use the `<Observer />` component globally a Nuxt 3 app, add this to your nuxt config:
 
 ```ts
 import { defineNuxtConfig } from 'nuxt3'
