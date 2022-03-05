@@ -14,10 +14,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build-fast": "tsup src/index.ts --format esm,cjs",
-    "build": "pnpm run build-fast -- --dts-resolve",
+    "build": "yarn run build-fast -- --dts-resolve",
     "test": "vitest run",
-    "release": "bumpp --commit --push --tag && pnpm publish",
-    "prepublishOnly": "pnpm run build",
+    "release": "bumpp --commit --push --tag && yarn publish",
+    "prepublishOnly": "yarn run build",
     "lint": "eslint \"**/*.{ts,js}\""
   },
   "dependencies": {
