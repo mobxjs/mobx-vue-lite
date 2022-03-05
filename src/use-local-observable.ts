@@ -1,17 +1,21 @@
 import { tryOnUnmounted } from '@vueuse/core'
-import { observable, observe, AnnotationsMap } from 'mobx'
-import { shallowRef, Ref, triggerRef, readonly } from 'vue'
+import type { AnnotationsMap } from 'mobx'
+import { observable, observe } from 'mobx'
+import type { Ref } from 'vue'
+import { shallowRef, triggerRef } from 'vue'
 
 export function useLocalObservable<TStore extends Record<string, any>>(
-    initializer: () => TStore,
-    annotations?: AnnotationsMap<TStore, never>
-):  Readonly<Ref<TStore>> {
-    const localObservable = shallowRef(observable(initializer(), annotations, { autoBind: true }))
-    const dispose = observe(localObservable.value, () => {
-        triggerRef(localObservable)
-    })
-    tryOnUnmounted(() => {
-      dispose()
-    })
-    return readonly(localObservable) as Readonly<Ref<TStore>>
+  initializer: () => TStore,
+  annotations?: AnnotationsMap<TStore, never>,
+): Ref<TStore> {
+  const localObservable = shallowRef(
+    observable(initializer(), annotations, { autoBind: true }),
+  )
+  const dispose = observe(localObservable.value, () => {
+    triggerRef(localObservable)
+  })
+  tryOnUnmounted(() => {
+    dispose()
+  })
+  return localObservable as Ref<TStore>
 }
