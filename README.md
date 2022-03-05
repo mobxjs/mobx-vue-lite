@@ -17,32 +17,26 @@ yarn add mobx mobx-vue-lite
 Creates an observable object with the given properties, methods and computed values.
 
 ```html
+<script setup>
+import { defineComponent } from 'vue'
+import { useLocalObservable } from 'mobx-vue-lite'
+
+const state = useLocalObservable(() => ({
+    count: 0,
+    get double() {
+        return this.count * 2
+    },
+    increment() {
+        this.count++
+    }
+}))
+</script>
+
 <template>
     <div>Count: {{ state.count }}</div>
     <div>Doubled: {{ state.double }}</div>
     <button @click="state.increment">Increment</button>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { useLocalObservable } from 'mobx-vue-lite'
-
-export default defineComponent({
-    setup() {
-        const state = useLocalObservable(() => ({
-            count: 0,
-            get double() {
-                return this.count * 2
-            },
-            increment() {
-                this.count++
-            }
-        }))
-
-        return { state }
-    }
-})
-</script>
 ```
 
 ### **`<Observer />`**
@@ -63,14 +57,7 @@ app.use(Observer)
 #### Or: Import and register it locally
 
 ```html
-<template>
-    <Observer>
-        <div>Name: {{ data.name }}</div>
-        <button @click="changeName">Change name</button>
-    </Observer>
-</template>
-
-<script setup lang="ts">
+<script setup>
 import { observable, runInAction } from 'mobx'
 import { Observer } from 'mobx-vue-lite'
 
@@ -82,6 +69,13 @@ const changeName = () => {
     })
 }
 </script>
+
+<template>
+    <Observer>
+        <div>Name: {{ data.name }}</div>
+        <button @click="changeName">Change name</button>
+    </Observer>
+</template>
 ```
 
 ### **`createGlobalObservable<T>(stateFactory: () => T): () => T`**
@@ -106,18 +100,18 @@ export const useGlobalObservable = createGlobalObservable(() => {
 ```
 
 ```html
-<template>
-    <div>Count: {{ state.count }}</div>
-    <div>Doubled: {{ state.double }}</div>
-    <button @click="state.increment">Increment</button>
-</template>
-
-<script setup lang="ts">
+<script setup>
 import { useGlobalObservable } from './store'
 
 // Can be reused in any component and state will be in sync
 const state = useGlobalObservable()
 </script>
+
+<template>
+    <div>Count: {{ state.count }}</div>
+    <div>Doubled: {{ state.double }}</div>
+    <button @click="state.increment">Increment</button>
+</template>
 ```
 
 ## Tips
@@ -147,6 +141,13 @@ watch(() => state.value.count, (count) => {
 Class observables should work out-of-the-box. Just wrap the component with the `<Observer />` component.
 
 ```html
+<script setup>
+import { Observer } from 'mobx-vue-lite'
+import { CounterStore } from './counterStore'
+
+const state = new CounterStore()
+</script>
+
 <template>
   <Observer>
     <h1 v-text="state.count" />
@@ -154,13 +155,6 @@ Class observables should work out-of-the-box. Just wrap the component with the `
     <button @click="state.increment">+</button>
   </Observer>
 </template>
-
-<script setup lang="ts">
-import { Observer } from 'mobx-vue-lite'
-import { CounterStore } from './counterStore'
-
-const state = new CounterStore()
-</script>
 ```
 
 ## Usage with Nuxt 3
