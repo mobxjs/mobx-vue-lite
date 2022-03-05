@@ -7,7 +7,7 @@ Demo: https://codesandbox.io/s/mobx-vue-lite-demo-4mctz
 ## Install
 
 ```sh
-yarn add mobx-vue-lite
+yarn add mobx mobx-vue-lite
 ```
 
 ## Example
@@ -181,4 +181,4 @@ API is inspired from https://github.com/mobxjs/mobx-react-lite.
 
 ## License
 
-MIT License © 2021 [Robert Soriano](https://github.com/wobsoriano)
+MIT License © 2022 [Robert Soriano](https://github.com/wobsoriano)
