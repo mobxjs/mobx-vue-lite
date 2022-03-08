@@ -88,14 +88,14 @@ import { createGlobalObservable, useLocalObservable } from 'mobx-vue-lite'
 
 export const useGlobalObservable = createGlobalObservable(() => {
   return useLocalObservable(() => ({
-      count: 0,
-      get double() {
-        return this.count * 2
-      },
-      increment() {
-        this.count++
-      }
-    }))
+    count: 0,
+    get double() {
+      return this.count * 2
+    },
+    increment() {
+      this.count++
+    },
+  }))
 })
 ```
 
@@ -121,20 +121,20 @@ You can watch the state and its changes through Vue's watch:
 ```ts
 import { watch } from 'vue'
 const state = useLocalObservable(() => ({
-    count: 0,
-    increment() {
-        this.count++
-    }
+  count: 0,
+  increment() {
+    this.count++
+  },
 }))
 
 // watch the whole state
 watch(state, (value) => {
-    console.log(value)
+  console.log(value)
 })
 
 // watch part of a state
 watch(() => state.value.count, (count) => {
-    console.log(count)
+  console.log(count)
 })
 ```
 
@@ -165,7 +165,7 @@ To use the `<Observer />` component globally a Nuxt 3 app, add this to your nuxt
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    buildModules: ['mobx-vue-lite/module']
+  buildModules: ['mobx-vue-lite/module'],
 })
 ```
 
