@@ -21,7 +21,7 @@
     "lint": "eslint \"**/*.{ts,js}\""
   },
   "dependencies": {
-    "@vueuse/core": "^7.7.0",
+    "@vueuse/core": "^8.0.0",
     "mobx": "^6.4.2",
     "vue": "^3.2.31"
   },
