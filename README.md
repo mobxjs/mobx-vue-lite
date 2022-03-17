@@ -165,14 +165,14 @@ To use the `<Observer />` component globally a Nuxt 3 app, add this to your nuxt
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-  buildModules: ['mobx-vue-lite/module'],
+  buildModules: ['mobx-vue-lite/nuxt'],
 })
 ```
 
 ## Credits
 
-API is inspired from https://github.com/mobxjs/mobx-react-lite.
+API was inspired from https://github.com/mobxjs/mobx-react-lite.
 
 ## License
 
-MIT License © 2022 [Robert Soriano](https://github.com/wobsoriano)
+MIT

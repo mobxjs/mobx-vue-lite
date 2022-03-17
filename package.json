@@ -4,14 +4,19 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
-    "./module": "./nuxt/module.mjs"
+    "./nuxt": "./nuxt/module.mjs"
   },
-  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "nuxt"
+  ],
+  "sideEffects": true,
   "scripts": {
     "build-fast": "tsup src/index.ts --format esm,cjs",
     "build": "yarn run build-fast -- --dts-resolve",
@@ -20,14 +25,14 @@
     "prepublishOnly": "yarn run build",
     "lint": "eslint \"**/*.{ts,js}\""
   },
+  "peerDependencies": {
+    "mobx": "^6.1.0",
+    "vue": "^3.2.0"
+  },
   "dependencies": {
     "@vueuse/core": "^8.0.0",
     "mobx": "^6.4.2",
     "vue": "^3.2.31"
-  },
-  "peerDependencies": {
-    "mobx": "^6.1.0",
-    "vue": "^3.2.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.18.8",
@@ -40,15 +45,10 @@
     "typescript": "4.6.2",
     "vitest": "0.7.0"
   },
-  "files": [
-    "dist",
-    "nuxt"
-  ],
   "eslintConfig": {
     "extends": "@antfu"
   },
   "eslintIgnore": [
     "dist"
-  ],
-  "sideEffects": true
+  ]
 }
