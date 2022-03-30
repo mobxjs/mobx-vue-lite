@@ -43,7 +43,7 @@
     "happy-dom": "2.50.0",
     "tsup": "5.12.1",
     "typescript": "4.6.3",
-    "vitest": "0.8.0"
+    "vitest": "0.8.1"
   },
   "eslintConfig": {
     "extends": "@antfu"
