@@ -41,7 +41,7 @@
     "bumpp": "7.1.1",
     "eslint": "8.13.0",
     "happy-dom": "2.55.0",
-    "tsup": "5.12.5",
+    "tsup": "5.12.6",
     "typescript": "4.6.3",
     "vitest": "0.9.3"
   },
