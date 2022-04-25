@@ -35,7 +35,7 @@
     "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.20.7",
+    "@antfu/eslint-config": "0.21.0",
     "@types/node": "17.0.21",
     "@vue/test-utils": "2.0.0-rc.21",
     "bumpp": "7.1.1",
