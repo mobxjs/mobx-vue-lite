@@ -1714,10 +1714,10 @@ globby@^11.0.3, globby@^11.0.4:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-happy-dom@2.55.0:
-  version "2.55.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-2.55.0.tgz#ad412939fea9b97f2e5985c404cf710638bba66a"
-  integrity sha512-CHDMBRau+l/yKQL+ANmexRAC8FRCuYbXRSpu/GbLVyfqkrlBzV7OSNd5C5HZ+pVFtFv1bFJYC5r+xrqgGQuq5w==
+happy-dom@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-3.1.0.tgz#dad86056ac2ee3d5b4172fba41fe3b4a4e1cea4b"
+  integrity sha512-BewZQwLdu6JS9HYT7enB2toju80OjSjl44+3HXMB3hT+2skC9Mja+/N/b+SbtnwJCMbQqiZVzy/RXevPPuBIXQ==
   dependencies:
     css.escape "^1.5.1"
     he "^1.2.0"
