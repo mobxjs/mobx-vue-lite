@@ -1,6 +1,6 @@
 {
   "name": "mobx-vue-lite",
-  "version": "0.3.1",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,7 +21,7 @@
     "build-fast": "tsup src/index.ts --format esm,cjs",
     "build": "pnpm run build-fast -- --dts-resolve",
     "test": "vitest run",
-    "release": "bumpp --commit --push --tag && pnpm run publish",
+    "release": "bumpp --commit --push --tag && pnpm publish",
     "prepublishOnly": "pnpm run build",
     "lint": "eslint \"**/*.{ts,js}\""
   },
