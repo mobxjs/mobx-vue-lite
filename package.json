@@ -19,10 +19,10 @@
   "sideEffects": true,
   "scripts": {
     "build-fast": "tsup src/index.ts --format esm,cjs",
-    "build": "yarn run build-fast -- --dts-resolve",
+    "build": "pnpm run build-fast -- --dts-resolve",
     "test": "vitest run",
-    "release": "bumpp --commit --push --tag && yarn publish",
-    "prepublishOnly": "yarn run build",
+    "release": "bumpp --commit --push --tag && pnpm run publish",
+    "prepublishOnly": "pnpm run build",
     "lint": "eslint \"**/*.{ts,js}\""
   },
   "peerDependencies": {
