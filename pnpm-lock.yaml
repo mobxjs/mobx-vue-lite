@@ -15,7 +15,6 @@ specifiers:
   vue: ^3.2.31
 
 dependencies:
-  '@vueuse/core': 8.4.2_vue@3.2.33
   mobx: 6.5.0
   vue: 3.2.33
 
@@ -23,6 +22,7 @@ devDependencies:
   '@antfu/eslint-config': 0.23.0_hcfsmds2fshutdssjqluwm76uu
   '@types/node': 17.0.21
   '@vue/test-utils': 2.0.0-rc.21_vue@3.2.33
+  '@vueuse/core': 8.4.2_vue@3.2.33
   bumpp: 7.1.1
   eslint: 8.15.0
   happy-dom: 3.1.1
@@ -504,11 +504,11 @@ packages:
       '@vueuse/shared': 8.4.2_vue@3.2.33
       vue: 3.2.33
       vue-demi: 0.12.5_vue@3.2.33
-    dev: false
+    dev: true
 
   /@vueuse/metadata/8.4.2:
     resolution: {integrity: sha512-2BIj++7P0/I5dfMsEe8q7Kw0HqVAjVcyNOd9+G22/ILUC9TVLTeYOuJ1kwa1Gpr+0LWKHc6GqHiLWNL33+exoQ==}
-    dev: false
+    dev: true
 
   /@vueuse/shared/8.4.2_vue@3.2.33:
     resolution: {integrity: sha512-hILXMEjL8YQhj1LHN/HZ49UThyfk8irTjhele2nW+L3N55ElFUBGB/f4w0rg8EW+/suhqv7kJJPTZzvHCqxlIw==}
@@ -523,7 +523,7 @@ packages:
     dependencies:
       vue: 3.2.33
       vue-demi: 0.12.5_vue@3.2.33
-    dev: false
+    dev: true
 
   /acorn-jsx/5.3.2_acorn@8.7.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -3265,7 +3265,7 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.33
-    dev: false
+    dev: true
 
   /vue-eslint-parser/8.3.0_eslint@8.15.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}
