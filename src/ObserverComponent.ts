@@ -7,7 +7,7 @@ export default defineComponent({
     dispose: () => {},
   }),
   mounted() {
-    this.dispose = reaction(() => this.$slots.default!(), () => {
+    this.dispose = reaction(() => this.$slots.default?.(), () => {
       this.forceUpdate()
     }, {
       requiresObservable: true,
