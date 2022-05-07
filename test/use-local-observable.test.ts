@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { useLocalObservable } from '../src'
 
 describe('useLocalObservable', () => {
-  it('should work properly in a Vue component', async() => {
+  it('should work properly in a Vue component', async () => {
     const Component = defineComponent({
       setup() {
         const state = useLocalObservable(() => ({

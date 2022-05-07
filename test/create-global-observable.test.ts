@@ -16,7 +16,7 @@ describe('createGlobalObservable', () => {
     }))
   })
 
-  it('should make local observable global', async() => {
+  it('should make local observable global', async () => {
     const Component = defineComponent({
       setup() {
         const state = useGlobalObservable()

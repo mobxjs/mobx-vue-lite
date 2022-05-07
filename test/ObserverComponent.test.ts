@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 import { Observer } from '../src'
 
 describe('Observer', () => {
-  it('should rerender component', async() => {
+  it('should rerender component', async () => {
     const Component = defineComponent({
       components: { Observer },
       setup() {
@@ -50,7 +50,7 @@ describe('Observer', () => {
     expect(wrapper.find('[data-testid="doubled"]').text()).toBe('Doubled: 6')
   })
 
-  it('should not rerender without Observer component', async() => {
+  it('should not rerender without Observer component', async () => {
     const Component = {
       template: `
                 <div data-testid="count">Count: {{ state.count }}</div>

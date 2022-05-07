@@ -23,7 +23,8 @@
     "test": "vitest run",
     "release": "bumpp --commit --push --tag && pnpm publish",
     "prepublishOnly": "pnpm run build",
-    "lint": "eslint \"**/*.{ts,js}\""
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
     "mobx": "^6.1.0",
@@ -47,8 +48,5 @@
   },
   "eslintConfig": {
     "extends": "@antfu"
-  },
-  "eslintIgnore": [
-    "dist"
-  ]
+  }
 }
