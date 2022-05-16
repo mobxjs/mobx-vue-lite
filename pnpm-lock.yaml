@@ -7,7 +7,7 @@ specifiers:
   '@vueuse/core': 8.5.0
   bumpp: 7.1.1
   eslint: 8.15.0
-  happy-dom: 3.2.0
+  happy-dom: 3.2.1
   mobx: ^6.4.2
   tsup: 5.12.7
   typescript: 4.6.4
@@ -25,10 +25,10 @@ devDependencies:
   '@vueuse/core': 8.5.0_vue@3.2.33
   bumpp: 7.1.1
   eslint: 8.15.0
-  happy-dom: 3.2.0
+  happy-dom: 3.2.1
   tsup: 5.12.7_typescript@4.6.4
   typescript: 4.6.4
-  vitest: 0.12.6_happy-dom@3.2.0
+  vitest: 0.12.6_happy-dom@3.2.1
 
 packages:
 
@@ -249,7 +249,7 @@ packages:
     dev: true
 
   /@types/form-data/0.0.33:
-    resolution: {integrity: sha1-yayFsqX9GENbjIXZ7LUObWyJP/g=}
+    resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
     dependencies:
       '@types/node': 17.0.21
     dev: true
@@ -645,7 +645,7 @@ packages:
     dev: true
 
   /asap/2.0.6:
-    resolution: {integrity: sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=}
+    resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
     dev: true
 
   /assertion-error/1.1.0:
@@ -653,7 +653,7 @@ packages:
     dev: true
 
   /asynckit/0.4.0:
-    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
 
   /balanced-match/1.0.2:
@@ -1871,8 +1871,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /happy-dom/3.2.0:
-    resolution: {integrity: sha512-+dtbWX+9pgfoDAoBvVKWc3Zhcmb4t9upGGT2zht1IzwdH5oNM9Nez+GsgEmXBFIpIq12/Mva3/4pl4XHRSNh3A==}
+  /happy-dom/3.2.1:
+    resolution: {integrity: sha512-OdXX/xkvERUyGltxDb374n86Aba0VqaK13xo9nn/ztQVy+RpXk8O6ZP6uygK6WNdF2Gn7T0hm6wtC8bcOLZZqQ==}
     dependencies:
       css.escape: 1.5.1
       he: 1.2.0
@@ -3283,7 +3283,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.6_happy-dom@3.2.0:
+  /vitest/0.12.6_happy-dom@3.2.1:
     resolution: {integrity: sha512-YWbCTv0XKBuBw5YtuW/iufuguoi8QhGpYyi2g57Oo7akpscMkkWTAaZGgY0ux1oJJtO/pc/8GFt0EF32WFBUUQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -3305,7 +3305,7 @@ packages:
       '@types/chai': 4.3.1
       '@types/chai-subset': 1.3.3
       chai: 4.3.6
-      happy-dom: 3.2.0
+      happy-dom: 3.2.1
       local-pkg: 0.4.1
       tinypool: 0.1.3
       tinyspy: 0.3.2
