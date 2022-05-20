@@ -7,7 +7,7 @@ specifiers:
   '@vueuse/core': 8.5.0
   bumpp: 7.1.1
   eslint: 8.15.0
-  happy-dom: 3.2.1
+  happy-dom: 4.0.0
   mobx: ^6.4.2
   tsup: 5.12.8
   typescript: 4.6.4
@@ -25,10 +25,10 @@ devDependencies:
   '@vueuse/core': 8.5.0_vue@3.2.33
   bumpp: 7.1.1
   eslint: 8.15.0
-  happy-dom: 3.2.1
+  happy-dom: 4.0.0
   tsup: 5.12.8_typescript@4.6.4
   typescript: 4.6.4
-  vitest: 0.12.6_happy-dom@3.2.1
+  vitest: 0.12.6_happy-dom@4.0.0
 
 packages:
 
@@ -743,7 +743,7 @@ packages:
     dev: true
 
   /caseless/0.12.0:
-    resolution: {integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=}
+    resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==}
     dev: true
 
   /chai/4.3.6:
@@ -1871,8 +1871,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /happy-dom/3.2.1:
-    resolution: {integrity: sha512-OdXX/xkvERUyGltxDb374n86Aba0VqaK13xo9nn/ztQVy+RpXk8O6ZP6uygK6WNdF2Gn7T0hm6wtC8bcOLZZqQ==}
+  /happy-dom/4.0.0:
+    resolution: {integrity: sha512-ChbKeqfBcNLET+z2wrdqRPH23a8/Fxi5Ng5F8VjIqJZVmDWFw2SMmV/r0zdelca9TY9oq0sWMMM8783ln/A28A==}
     dependencies:
       css.escape: 1.5.1
       he: 1.2.0
@@ -3295,7 +3295,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.6_happy-dom@3.2.1:
+  /vitest/0.12.6_happy-dom@4.0.0:
     resolution: {integrity: sha512-YWbCTv0XKBuBw5YtuW/iufuguoi8QhGpYyi2g57Oo7akpscMkkWTAaZGgY0ux1oJJtO/pc/8GFt0EF32WFBUUQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -3317,7 +3317,7 @@ packages:
       '@types/chai': 4.3.1
       '@types/chai-subset': 1.3.3
       chai: 4.3.6
-      happy-dom: 3.2.1
+      happy-dom: 4.0.0
       local-pkg: 0.4.1
       tinypool: 0.1.3
       tinyspy: 0.3.2
