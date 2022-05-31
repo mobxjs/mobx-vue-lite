@@ -7,7 +7,7 @@ specifiers:
   '@vueuse/core': 8.5.0
   bumpp: 7.1.1
   eslint: 8.16.0
-  happy-dom: 4.1.0
+  happy-dom: 5.0.0
   mobx: ^6.4.2
   tsup: 6.0.1
   typescript: 4.7.2
@@ -25,10 +25,10 @@ devDependencies:
   '@vueuse/core': 8.5.0_vue@3.2.33
   bumpp: 7.1.1
   eslint: 8.16.0
-  happy-dom: 4.1.0
+  happy-dom: 5.0.0
   tsup: 6.0.1_typescript@4.7.2
   typescript: 4.7.2
-  vitest: 0.13.0_happy-dom@4.1.0
+  vitest: 0.13.0_happy-dom@5.0.0
 
 packages:
 
@@ -1858,8 +1858,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /happy-dom/4.1.0:
-    resolution: {integrity: sha512-x/W72MnJ3VENTXrIlvdkb5t+f7Tkeze8CEcUEiVAbPovZnsB6vl/szkWCKuuovmdWBxJtqP147qedos9wWxllg==}
+  /happy-dom/5.0.0:
+    resolution: {integrity: sha512-n47uxVRW2prLQ1mYEfwc5JPeMmiQGHpUsM0edtqlKIWJlAvpZJmq0ZAKdeDuZ/f1Gu8kXumy9jyWsJ1zRT7VEw==}
     dependencies:
       css.escape: 1.5.1
       he: 1.2.0
@@ -2138,7 +2138,7 @@ packages:
     dev: true
 
   /isarray/1.0.0:
-    resolution: {integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=}
+    resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
     dev: true
 
   /isexe/2.0.0:
@@ -3284,7 +3284,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.13.0_happy-dom@4.1.0:
+  /vitest/0.13.0_happy-dom@5.0.0:
     resolution: {integrity: sha512-vuYt3+G25MMnANgyMHHG3VK86C9K/VFi/8uH5myQ2v660W4WArv99ElakPlVFxxSXXM1jqQPiPj2ht35Bod9LQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -3307,7 +3307,7 @@ packages:
       '@types/chai-subset': 1.3.3
       chai: 4.3.6
       debug: 4.3.4
-      happy-dom: 4.1.0
+      happy-dom: 5.0.0
       local-pkg: 0.4.1
       tinypool: 0.1.3
       tinyspy: 0.3.2
