@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': 0.25.1
   '@types/node': 17.0.21
-  '@vue/test-utils': 2.0.0
+  '@vue/test-utils': 2.0.1
   '@vueuse/core': 8.6.0
   bumpp: 7.1.1
   eslint: 8.17.0
@@ -21,7 +21,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.25.1_ud6rd4xtew5bv4yhvkvu24pzm4
   '@types/node': 17.0.21
-  '@vue/test-utils': 2.0.0_vue@3.2.33
+  '@vue/test-utils': 2.0.1_vue@3.2.33
   '@vueuse/core': 8.6.0_vue@3.2.33
   bumpp: 7.1.1
   eslint: 8.17.0
@@ -489,8 +489,8 @@ packages:
   /@vue/shared/3.2.33:
     resolution: {integrity: sha512-UBc1Pg1T3yZ97vsA2ueER0F6GbJebLHYlEi4ou1H5YL4KWvMOOWwpYo9/QpWq93wxKG6Wo13IY74Hcn/f7c7Bg==}
 
-  /@vue/test-utils/2.0.0_vue@3.2.33:
-    resolution: {integrity: sha512-zL5kygNq7hONrO1CzaUGprEAklAX+pH8J1MPMCU3Rd2xtSYkZ+PmKU3oEDRg8VAGdL5lNJHzDgrud5amFPtirw==}
+  /@vue/test-utils/2.0.1_vue@3.2.33:
+    resolution: {integrity: sha512-4kt7Sw1gzXeQOsMqrwrQbmEiG8El4MP8P4hfxkmfXdUHf7yHa3xC5CQc0x2YyuhT41w2d4K4O0ZdRvZhGdZlow==}
     peerDependencies:
       vue: ^3.0.1
     dependencies:
