@@ -5,7 +5,7 @@ specifiers:
   '@types/node': 17.0.21
   '@vue/test-utils': 2.0.1
   '@vueuse/core': 8.6.0
-  bumpp: 7.1.1
+  bumpp: 7.2.0
   eslint: 8.17.0
   happy-dom: 5.3.1
   mobx: ^6.4.2
@@ -23,7 +23,7 @@ devDependencies:
   '@types/node': 17.0.21
   '@vue/test-utils': 2.0.1_vue@3.2.33
   '@vueuse/core': 8.6.0_vue@3.2.33
-  bumpp: 7.1.1
+  bumpp: 7.2.0
   eslint: 8.17.0
   happy-dom: 5.3.1
   tsup: 6.1.2_typescript@4.7.3
@@ -686,8 +686,8 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /bumpp/7.1.1:
-    resolution: {integrity: sha512-pAGjraw9T4I4dnkiQHrKUVQb55dOM5Nj72SVtVlkjFjWjFtg0aSgipQuxDWZ0cqm8WoqtaiBPk+7jHfnZxr7lA==}
+  /bumpp/7.2.0:
+    resolution: {integrity: sha512-vQxdpWe7VzdpV4dVjpWoGwTDrKZn4eqKVmjIYUlDgrmjesXAqJnWhu+VFxazoE4pLs1q5NwDhgzK1xAFL0K+Jg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -722,7 +722,7 @@ packages:
     dev: true
 
   /call-me-maybe/1.0.1:
-    resolution: {integrity: sha1-JtII6onje1y95gJQoV8DHBak1ms=}
+    resolution: {integrity: sha512-wCyFsDQkKPwwF8BDwOiWNx/9K45L/hvggQiDbve+viMNMQnWhrlYIuBk09offfwCRtCO9P6XwUttufzU11WCVw==}
     dev: true
 
   /callsites/3.1.0:
@@ -2246,7 +2246,7 @@ packages:
     dev: true
 
   /lodash.camelcase/4.3.0:
-    resolution: {integrity: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=}
+    resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
     dev: true
 
   /lodash.merge/4.6.2:
