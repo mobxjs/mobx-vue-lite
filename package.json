@@ -39,7 +39,7 @@
     "@types/node": "17.0.21",
     "@vue/test-utils": "2.0.1",
     "@vueuse/core": "8.6.0",
-    "bumpp": "7.2.0",
+    "bumpp": "8.2.0",
     "eslint": "8.17.0",
     "happy-dom": "5.3.1",
     "tsup": "6.1.2",
