@@ -5,7 +5,7 @@ specifiers:
   '@types/node': 17.0.21
   '@vue/test-utils': 2.0.1
   '@vueuse/core': 8.7.4
-  bumpp: 8.2.0
+  bumpp: 8.2.1
   eslint: 8.18.0
   happy-dom: 5.3.1
   mobx: ^6.4.2
@@ -23,7 +23,7 @@ devDependencies:
   '@types/node': 17.0.21
   '@vue/test-utils': 2.0.1_vue@3.2.33
   '@vueuse/core': 8.7.4_vue@3.2.33
-  bumpp: 8.2.0
+  bumpp: 8.2.1
   eslint: 8.18.0
   happy-dom: 5.3.1
   tsup: 6.1.2_typescript@4.7.4
@@ -681,8 +681,8 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /bumpp/8.2.0:
-    resolution: {integrity: sha512-DhFa4DSREOwnHJQyQ+Qhj9pUJAIZKMEtuHN7BuQij4CoxSBc6n4bBZnlvFWuLXNMr0aCtsMXnkQWC/7GyGypYw==}
+  /bumpp/8.2.1:
+    resolution: {integrity: sha512-4tHKsWC2mqHQvdjZ4AXgVhS2xMsz8qQ4zYt87vGRXW5tqAjrYa/UJqy7s/dGYI2OIe9ghBdiFhKpyKEX9SXffg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
