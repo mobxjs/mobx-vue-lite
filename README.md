@@ -120,6 +120,7 @@ You can watch the state and its changes through Vue's watch:
 
 ```ts
 import { watch } from 'vue'
+
 const state = useLocalObservable(() => ({
   count: 0,
   increment() {
