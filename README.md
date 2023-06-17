@@ -18,7 +18,6 @@ Creates an observable object with the given properties, methods and computed val
 
 ```html
 <script setup>
-import { defineComponent } from 'vue'
 import { useLocalObservable } from 'mobx-vue-lite'
 
 const state = useLocalObservable(() => ({
