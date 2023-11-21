@@ -7,7 +7,7 @@ Demo: https://codesandbox.io/s/mobx-vue-lite-demo-4mctz
 ## Install
 
 ```sh
-yarn add mobx mobx-vue-lite
+npm install mobx mobx-vue-lite
 ```
 
 ## Example
