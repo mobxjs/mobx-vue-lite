@@ -2,7 +2,7 @@
 
 Lightweight Vue 3 bindings for MobX based on Composition API.
 
-Demo: https://codesandbox.io/s/mobx-vue-lite-demo-4mctz
+Demo: https://stackblitz.com/edit/mobx-vue-lite-demo
 
 ## Install
 
