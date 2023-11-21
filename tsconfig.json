@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
     "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
     "moduleResolution": "Node",
-    "strict": true,
-    "sourceMap": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "noEmit": true,
+    "strict": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noEmit": true,
+    "sourceMap": true,
+    "esModuleInterop": true
   },
   "include": ["./src"]
 }

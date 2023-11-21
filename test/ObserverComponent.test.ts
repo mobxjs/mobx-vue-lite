@@ -4,7 +4,7 @@ import { observable, runInAction } from 'mobx'
 import { describe, expect, it } from 'vitest'
 import { Observer } from '../src'
 
-describe('Observer', () => {
+describe('observer', () => {
   it('should rerender component', async () => {
     const Component = defineComponent({
       components: { Observer },
