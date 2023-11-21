@@ -22,6 +22,6 @@ export default defineComponent({
     },
   },
   render() {
-    return h(this.$slots.default!, { key: this.key })
+    return h(this.$slots.default!, { mobxVueKey: this.key })
   },
 })
