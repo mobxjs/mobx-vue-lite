@@ -70,10 +70,10 @@ const changeName = () => {
 </script>
 
 <template>
-    <Observer>
-        <div>Name: {{ data.name }}</div>
-        <button @click="changeName">Change name</button>
-    </Observer>
+  <Observer>
+    <div>Name: {{ data.name }}</div>
+    <button @click="changeName">Change name</button>
+  </Observer>
 </template>
 ```
 
@@ -107,9 +107,9 @@ const state = useGlobalObservable()
 </script>
 
 <template>
-    <div>Count: {{ state.count }}</div>
-    <div>Doubled: {{ state.double }}</div>
-    <button @click="state.increment">Increment</button>
+  <div>Count: {{ state.count }}</div>
+  <div>Doubled: {{ state.double }}</div>
+  <button @click="state.increment">Increment</button>
 </template>
 ```
 
