@@ -38,4 +38,34 @@ describe('useLocalObservable', () => {
     expect(wrapper.find('[data-testid="count"]').text()).toBe('Count: 3')
     expect(wrapper.find('[data-testid="doubled"]').text()).toBe('Doubled: 6')
   })
+
+  it('should observe changes to arrays and objects', async () => {
+    const Component = defineComponent({
+      setup() {
+        const state = useLocalObservable(() => ({
+          list: [],
+          obj: { count: 0 },
+          increment() {
+            this.list.push(1)
+            this.obj.count++
+          },
+        }))
+
+        return {
+          state,
+        }
+      },
+      template: `
+          <div data-testid="length">{{ state.list.length }}</div>
+          <div data-testid="count">{{ state.obj.count }}</div>
+          <button @click="state.increment">+</button>
+      `,
+    })
+
+    const wrapper = mount(Component)
+    await wrapper.find('button').trigger('click')
+    await nextTick()
+    expect(wrapper.find('[data-testid="count"]').text()).toBe('1')
+    expect(wrapper.find('[data-testid="length"]').text()).toBe('1')
+  })
 })
