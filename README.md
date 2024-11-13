@@ -79,7 +79,7 @@ const changeName = () => {
 
 ### **`createGlobalObservable<T>(stateFactory: () => T): () => T`**
 
-Create a global observer from a local observer.
+Create a global observable from a local observable.
 
 ```ts
 // store.ts
